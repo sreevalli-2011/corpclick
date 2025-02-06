@@ -1,0 +1,203 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+ 
+}
+html,body {
+     width: 100%;
+     height: 100%;
+     background-color: #000000;
+     overflow-x: hidden;
+     
+    }
+
+/* Custom styles */
+   .nav-item a {
+    color: white !important; /* Set text color to white */
+    font-size: 20px;
+   
+  }
+  .nav-item.active {
+    font-weight: bold;
+  }
+  .logo {
+   /* Align logo to the left */
+     margin-left:20px;
+    
+        
+  }
+  .nav-center {
+    text-align: center; /* Align navigation to the center */
+  }
+  .nav-underline {
+    text-decoration: underline;
+    color: white;
+  }
+
+  .navbar-toggler-icon {
+    background-color: white;
+    border-color: green 1px solid;
+  }
+  
+  .navbar-toggler-icon:focus {
+    box-shadow: none;
+  }
+  
+  .navbar-dark .navbar-toggler-icon {
+    border-color: white;
+   
+  }
+ 
+  
+
+  /*2nd row*/
+
+  .text{
+      color:white;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .content{
+      color: white;
+      font-family: Arial, Helvetica, sans-serif; /* Or 'Open Sans', 'Lato', etc. */;
+      font-size: 16px;
+      font-weight: 300;
+      text-align: justify;
+      text-align: center;
+  }
+    
+ .wrapper {
+      display: flex;
+      max-width:900px;
+      margin:0 auto;
+    justify-content:space-between;
+    
+    
+}
+
+.icon-box {
+ 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #1f1818;
+    text-align: center;
+    position: relative;
+   margin-top: 20px;
+    box-shadow: 4px 8px 8px 0 rgba(150, 7, 133, 0.2), 0 6px 20px 0 rgba(51, 6, 140, 0.19);
+    border-top: 3px 1px solid;
+
+ 
+    /* Remove the white color for text */
+  }
+
+
+
+ 
+
+
+  
+  .card-border{
+    width:1200px;
+    height: 10px;
+    margin-top: 10px;
+   border-bottom:3px white solid;
+   box-shadow: 4px 8px 8px 0 rgba(150, 7, 133, 0.2), 0 6px 20px 0 rgba(51, 6, 140, 0.19);
+   filter: blur(10px);
+    
+   
+
+  }
+
+  .content1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: regular;
+    text-align: justify;
+    text-align: center;
+  }
+
+     .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+        grid-gap: 10px; 
+        position: relative;
+      }
+      
+      .image {
+        text-align: center;
+        padding: 20px;
+      }
+      
+      .image-left {
+        grid-column: 1; 
+        position: absolute; /* Position absolutely within the container */
+         top:-10%; /* Align to the top */
+         left:8%;
+      
+         
+    
+      }
+      
+      .image-middle {
+        grid-column: 2; 
+       /* Align to the bottom of the grid cell */
+    
+     
+      }
+      
+      .image-right {
+        grid-column: 3; /* Place in the third column */
+        position: absolute; /* Position absolutely within the container */
+       top: 10%; /* Align to the top */
+       right:30%; /* Position to the left side of the middle image */
+    
+         
+      
+      }
+
+
+
+      /* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    grid-gap:5px; /* Hide horizonta scrolling */
+  }
+.image-left{
+  left:20%;
+}
+
+  .image-left,
+  .image-middle,
+  .image-right {
+    position: static; /* Reset positioning for smaller screens */
+    grid-column: 1;
+    margin-bottom: 5px;
+  }
+  .image-right{
+  right:auto;
+  }
+  .image-middle img {
+    width: 100%;
+  }
+}
+.white-nav {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:16px; 
+  font-weight: 200;
+  padding-left:0;
+}
+.custom-size {
+  font-size: 36px; 
+}
+
+
